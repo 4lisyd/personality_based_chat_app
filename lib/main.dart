@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+//import 'package:personality_based_chat_app/screens/splash_screen.dart';
+import 'package:personality_based_chat_app/screens/welcome_screen.dart';
+import 'theme/style.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      title: 'P-chat',
+      theme: apptheme(),
+      home: WelcomeScreen(),
     );
   }
 }
-
